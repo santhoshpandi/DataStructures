@@ -1,0 +1,4 @@
+{
+  "exec": "javac collections/arrayList.java && java -cp collections arrayList",
+  "watch": ["collections/arrayList.java"]
+}
