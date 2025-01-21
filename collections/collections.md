@@ -1,5 +1,7 @@
 Java provides various classes and interfaces for working with groups of objects. The java.util package is where most of the collection-related classes reside. There are several types of collections, but I'll break it down into some of the key components.
 
+<img src="image.png">
+
 ### 1\. **Collection Interface**
 
 The root of the collection hierarchy is the Collection interface. It is the base interface for all collections, but you won't typically use Collection directly. Instead, you'll use more specialized interfaces that extend Collection.
