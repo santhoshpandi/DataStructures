@@ -1,4 +1,4 @@
 {
-  "exec": "javac collections/queue.java && java -cp collections queue",
-  "watch": ["collections/queue.java"]
+  "exec": "javac collections/hashMap.java && java -cp collections hashMap",
+  "watch": ["collections/hashMap.java"]
 }

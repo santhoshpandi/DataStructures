@@ -8,8 +8,12 @@ public class linkedList {
     l.add("Tomato");
     l.add("Banana");
     l.add("Orange");
+    l.add(2,"Steak"); //dll insertion concept
 
     System.out.println(l);
+
+    //Update
+    l.set(2,"Cake");
 
     //Print
     for(String s:l) System.out.println(s);

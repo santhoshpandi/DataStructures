@@ -2,18 +2,19 @@ import java.util.*;
 public class queue {
   public static void main(String[] args) {
 
-    // Both Queue and Dequeue -> Linkedlist    
-    Queue<String> q = new LinkedList<>();
+    // Both Queue and Dequeue -> Linkedlist or ArrayDequeue    
+    Queue<String> q = new ArrayDeque<>();
 
-    //Enqueue
+    //Enqueue (add(), offer())
     q.add("sun");
     q.add("mercury");
     q.add("earth");
-    q.add("moon");
+    q.add("moon"); //if error -> return error
+    q.offer("venus"); //if erorr -> return false
 
     System.out.println(q);
 
-    //Dequeue 
+    //Dequeue (remove(), poll())
     q.remove(); //if empty -> return error
     q.poll(); //if empty -> return null
 
