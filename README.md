@@ -1,9 +1,5 @@
-<style>
-r { color: Bisque }
-o { color: LawnGreen }
-g { color: Green }
-y { color: Yellow }
-</style>
+<link rel="stylesheet" href="styles.css">
+
 *** 
 # DataStructures - <y>30 Days
  author - <y>Santhosh Pandi🦊
