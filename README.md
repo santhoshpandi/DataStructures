@@ -1,8 +1,8 @@
 <link rel="stylesheet" href="styles.css">
 
 *** 
-# DataStructures - <y>30 Days
- author - <y>Santhosh Pandi🦊
+# DataStructures - <y>30 Days🚀
+ Author - <y>Santhosh Pandi🦊
 
 ***
  ## Week 1: Basics of DSA⚡
@@ -11,7 +11,8 @@
 
 Learn
 
-- <o> Time Complexity and Space Complexity . Big-O Notation
+- <o> Time Complexity and Space Complexity
+- <o> Big-O Notation
 
 Practice
 
@@ -19,7 +20,8 @@ Practice
 
 Resources
 
-- "Introduction to Algorithms" by Cormen (Chapter 1 on complexity) ⚫ Online videos on Big-O
+- "Introduction to Algorithms" by Cormen (Chapter 1 on complexity)
+- Online videos on Big-O
 
 ### <r> Day 3-4: Arrays and Strings🔥
 
@@ -31,7 +33,9 @@ Topics Basics
 
 Problems
 
-- Find the maximum sum subarray (Kadane's Algorithm) , Two Sum Problem, Longest Substring Without Repeating Characters 
+- Find the maximum sum subarray (Kadane's Algorithm)
+- Two Sum Problem
+- Longest Substring Without Repeating Characters 
 
 Practice Sites
 
@@ -45,10 +49,11 @@ Practice Sites
 
 Learn
 
-- <o> Bubble, Selection, Insertion, Merge, Quick Sort Practice
+- <o> Bubble, Selection, Insertion, Merge, Quick Sort 
 
-Implement 
-- sorting algorithms and understand time complexity. . Focus on Merge Sort and Quick Sort.
+Practice
+- Implement sorting algorithms and understand time complexity. 
+- Focus on Merge Sort and Quick Sort.
 
 ### <r> Day 6-7: Linked Lists🔥
 

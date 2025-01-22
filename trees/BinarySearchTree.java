@@ -37,22 +37,67 @@ public class BinarySearchTree {
   }
   
   public void delete(int data){
+    // Deletion Cases:
+    // Leaf Node : Simply remove the node from the tree.
+    // One Child: Remove the node and link its parent to its child.
+    // Two Child: Find the inorder small (or predecessor), copy its value to the node to be deleted, and then delete the inorder small.
+
     if(root==null){
       System.out.println("Empty Tree");
       return;
     }
 
     Node curr=root,parent=null;
-    while(curr!=null)
+    while(curr!=null && curr.data!=data)
     {
       parent=curr;
-      if(curr.data == data){
-        
-      }
-      else if(data < curr.data) curr=curr.left;
+      if(data < curr.data) curr=curr.left;
       else curr=curr.right;
     }
-    System.out.println("Data Not found to be Deleted");
+
+    if(curr==null){ System.out.println("Data Not found to be Deleted"); return; }
+
+    //Case 1: No Child
+    if(curr.left==null && curr.right==null){
+      //root node
+      if(curr == root) root=null;
+      //left node
+      else if(parent.left == curr) parent.left=null;
+      //right node
+      else parent.right=null;
+    }
+
+    //Case 2: One Child
+    else if(curr.left==null || curr.right==null)
+    {
+      Node child = (curr.left!=null) ? curr.left : curr.right;
+
+      if(curr==root) root=child;
+      else if(parent.left==curr) parent.left = child;
+      else parent.right=child;
+    }
+
+    //Case 3: Two Child
+    else{
+      Node small = curr.right;
+      Node smallParent = curr;
+
+      //Find Smallest node of right side of curr Node.
+      while(small != null)
+      {
+        smallParent = small;
+        small=small.left;
+      }
+
+      //Copy the smallest node value -> curr node
+      curr.data = small.data;
+
+      //Delete the smallest node
+      if(smallParent.left == small) smallParent.left=small.left;
+      else smallParent.right=small.right;
+    }
+
+    inOrder(root);
   }
  
   public void search(int data){
@@ -92,8 +137,8 @@ public class BinarySearchTree {
   public void postOrder(Node root){
     if(root!=null)
     {
-      preOrder(root.left);
-      preOrder(root.right);
+      postOrder(root.left);
+      postOrder(root.right);
       System.out.print(root.data+" -> ");
     }
   }

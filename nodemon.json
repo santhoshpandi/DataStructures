@@ -1,4 +1,4 @@
 {
-  "exec": "javac collections/hashMap.java && java -cp collections hashMap",
-  "watch": ["collections/hashMap.java"]
+  "exec": "javac trees/AvlTree.java && java -cp trees AvlTree",
+  "watch": ["trees/AvlTree.java"]
 }
