@@ -1,4 +1,4 @@
 {
-  "exec": "javac trees/AvlTree.java && java -cp trees AvlTree",
-  "watch": ["trees/AvlTree.java"]
+  "exec": "javac graphs/Graph.java && java -cp graphs Graph",
+  "watch": ["graphs/Graph.java"]
 }

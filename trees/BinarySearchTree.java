@@ -83,7 +83,7 @@ public class BinarySearchTree {
       Node smallParent = curr;
 
       //Find Smallest node of right side of curr Node.
-      while(small != null)
+      while(small.left != null)
       {
         smallParent = small;
         small=small.left;
@@ -92,9 +92,11 @@ public class BinarySearchTree {
       //Copy the smallest node value -> curr node
       curr.data = small.data;
 
-      //Delete the smallest node
-      if(smallParent.left == small) smallParent.left=small.left;
-      else smallParent.right=small.right;
+      Node child = (small.left!=null)?small.left:small.right;
+
+      //Delete the small node
+      if(smallParent.left == small) smallParent.left=child;
+      else smallParent.right=child;
     }
 
     inOrder(root);

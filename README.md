@@ -4,6 +4,12 @@
 # DataStructures - <y>30 Days🚀
  Author - <y>Santhosh Pandi🦊
 
+ ## Acknowledgment:
+
+The structure for this DSA learning roadmap was inspired by an Instagram reel. Unfortunately, I am unable to credit the original creator, as the source is unknown. All credit for the learning path goes to them.
+
+The programs, designs, and implementations in this repository were created by `me`.
+
 ***
  ## Week 1: Basics of DSA⚡
 
